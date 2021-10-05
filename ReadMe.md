@@ -21,8 +21,26 @@ The following **bonus** features are implemented:
 
 ## Video Walkthrough
 
+
+
+
 Here's a walkthrough of implemented user stories:
 
 
 ![](https://i.imgur.com/GdfaNFi.gif)
+
+
+Here's a second walkthrough showing new user can login and app icon
+
+
+![](https://i.imgur.com/hg3iZQK.gif)
+
+
+
+
+
+
+
+
+
 
