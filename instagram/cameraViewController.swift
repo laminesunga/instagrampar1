@@ -19,10 +19,7 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     
     
-    @IBAction func cancel(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
+  
     
     
     
@@ -36,7 +33,7 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         let post = PFObject(className: "Posts")
         
-        post ["caption"] = commentField.text
+        post ["caption"] = commentField.text!
         //post ["weight"] = 50
         post ["author"] = PFUser.current()!
         
@@ -47,6 +44,7 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         post.saveInBackground {(success, error) in
           if success {
+            self.dismiss(animated: true, completion: nil)
             print ("saved!")
           } else {
             print("error!")

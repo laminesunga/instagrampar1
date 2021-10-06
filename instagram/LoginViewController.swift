@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
     }
     
     
-    @IBAction func onSignIN(_ sender: Any) {
+    @IBAction func onSignIn(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
         
@@ -47,9 +47,10 @@ class LoginViewController: UIViewController {
     }
     
     
-    @IBAction func onSignUp(_ sender: Any) {
+    @IBAction func onSignup(_ sender: Any) {
         
         let user = PFUser()
+        
         user.username = usernameField.text
         user.password = passwordField.text
         
